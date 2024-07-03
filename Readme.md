@@ -1,6 +1,6 @@
-# Jungle Adventure World Automated Project
+# Super Mario Automated Project
 
-Welcome to  Jungle Adventure World Automated Project
+Welcome to  Super Mario Automated Project
 
 ## Table of Contents
 
@@ -12,34 +12,27 @@ Welcome to  Jungle Adventure World Automated Project
 
 ## Introduction
 
-The Jungle Adventure World Automated Project enables users to control Jungle Adventure World using natural body gestures. Moving left and right mimics real-life motions, while raising the right hand above the right shoulder triggers the character to jump. Similarly, raising the left hand allows the player to throw stones. This project utilizes MediaPipe and PyDirectInput to accurately interpret these gestures, enhancing gameplay by integrating physical movements with digital interactions.
+The Super Mario Automated Project enables users to control Super Mario using natural body gestures with enhanced interaction mechanics. 
 
-
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Rohit131313/Jungle-Adventure-World-Automated.git
+   git clone https://github.com/Rohit131313/Super-Mario-Automated.git
 
 2. Install the Required Dependencies
-To set up the Jungle Adventure World Automated Project, follow these steps:
+To set up the Super Mario Automated Project, follow these steps:
 
 ##### Step 1: Install Python Packages
 Open your command prompt or terminal and navigate to your project directory. Run the following commands to install the necessary Python packages:
 ```bash
     pip install -r requirements.txt
 ```
-##### Step 2: Install the Game
-1. Search and Install from Microsoft Store:
-
-Search for Jungle Adventure World on the Microsoft Store or click link https://www.microsoft.com/store/productId/9N713BXB0R5H?ocid=pdpshare to navigate directly to the game's page.
-
-2. Download and Install:
-
-Follow the instructions on the Microsoft Store page to download and install the game.
-
+##### Step 2: Use an Emulator
+You can either use an online emulator or set up your own local emulator to play Super Mario.
+For the online emulator , you can visit this [link](https://www.playroms.net/nes-roms/super-mario-bros/)
 
 ## Usage
 1. Run the Program
@@ -48,18 +41,20 @@ Execute the Control.py file
    python Control.py
 ```
 2. Control Game Actions
-
-Interact with the game using shoulder or body movements:
+Interact with the game using natural body movements. Upon starting the program, vertical and horizontal lines will be drawn on the screen via the webcam to facilitate gesture recognition.
 
 - Movement Control:
 
-    - Shift your shoulders or whole body to the right to simulate right movement in the game.
-    - Shift your shoulders or whole body to the left to simulate left movement in the game.
+    - Vertical Line Interaction: 
+        - Move to the left or right of the vertical line drawn on the screen to control the character's left or right movement. Shifting your body to the left moves the character left, and shifting to the right moves the character right.
+
 
 - Action Control:
 
-    - Raise your right hand above your right shoulder to trigger actions like jumping or moving upwards in the game.
-    - Raise your left hand to perform actions such as throwing stones or executing specific game functions.
+    - Horizontal Line Interaction:
+        - Small Jump: Raise your shoulders above the first horizontal line to trigger a small jump in the game.
+        - Long Jump: Raise your shoulders above the second horizontal line to perform a long jump.
+        - Move Down: Lower your head below the first horizontal line to cause the character to duck or move down.
 
 ## Contribution
 Contributions are welcome! If you have any ideas for improvements, found a bug, or want to add new features, feel free to open an issue or submit a pull request. 
