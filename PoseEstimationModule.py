@@ -33,6 +33,8 @@ class poseDetector():
 
     def findPosition(self, img, draw=True):
         self.lmList = []
+        imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        self.results = self.pose.process(imgRGB)
         if self.results.pose_landmarks:
             for id, lm in enumerate(self.results.pose_landmarks.landmark):
                 h, w, c = img.shape
